@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>My Site</title>
+		<link rel="stylesheet" href="index.css"/>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<header class="navbar">
+			<div class="nav-left">
+				Marcelo Almaguer
+			</div>
+
+			<nav class="nav-right">
+				<a href="#about" class="nav-link">Sobre mi</a>
+				<a href="#projects" class="nav-link">Proyectos</a>
+				<a href="#contact" class="nav-link">Contacto</a>
+			</nav>
+		</header>
+
+		<main class="content">
+			<section id="about" class="section">
+				<h2>Sobre mi</h2>
+				<p>
+					Soy desarrollador junior con experiencia en proyectos académicos y personales 
+					enfocados en desarrollo web y aplicaciones interactivas. Durante mi formación 
+					trabajé con JavaScript tanto del lado del cliente como del servidor, integrando 
+					lógica de negocio, manejo de estados y comunicación en tiempo real.
+				</p>
+				<p>
+					He desarrollado proyectos completos donde participé en el diseño de la aplicación, 
+					implementación de funcionalidades, corrección de errores y pruebas. Me caracterizo 
+					por ser persistente al resolver problemas técnicos, dedicando el tiempo necesario 
+					hasta encontrar soluciones funcionales y bien estructuradas.
+				</p>
+				<p>
+					Cuento con conocimientos en JavaScript, HTML, CSS, bases de datos SQL y control de 
+					versiones con Git. Actualmente busco mi primera oportunidad profesional como 
+					desarrollador junior, con el objetivo de seguir aprendiendo, aportar al equipo 
+					y crecer dentro de un entorno de desarrollo real.
+				</p>
+			</section>
+
+			<section id="projects" class="section">
+				<h2>Proyectos</h2>
+				<div class="project-card">
+					<div class="project-header">
+						<h2 class="project-title">ScoreHero - Rediseño</h2>
+						<p class="project-subtitle">Rediseño del UI y UX de la pagina ScoreHero para mejorar la legibilidad y mordernizar la experiencia.</p>
+					</div>
+
+					<div class="comparison-slider" id="comparisonSlider">
+						<div class="slider-labels">
+							<span class="slider-label label-before">Antes</span>
+							<span class="slider-label label-after">Despues</span>
+						</div>
+
+						<div class="img-wrapper">
+							<img src="Assets/ScoreHero rediseñado.png" alt="ScoreHero Redesign - After" id="afterImg">
+							<div class="img-overlay" id="overlay">
+								<img src="Assets/ScoreHero antiguo.png" alt="ScoreHero Original - Before" id="beforeImg">
+							</div>
+						</div>
+
+						<div class="slider-handle" id="sliderHandle">
+							<div class="slider-button"></div>
+						</div>
+					</div>
+
+					<div class="project-details">
+						<div class="detail-section">
+							<h3>Mejoras Principales</h3>
+							<ul>
+								<li>Diseño moderno con un tema oscuro elegante</li>
+								<li>Mejor organización de información en tarjetas</li>
+								<li>Navegacion rediseñada con inconos intuitivos</li>
+								<li>Menor ruido visual para una experiencia más clara</li>
+								<li>Tipografía moderna y mayor legibilidad</li>
+								<li>Paleta de colores coherente y atractiva (oscuro con acentos dorados)</li>
+							</ul>
+						</div>
+
+						<div class="detail-section">
+							<h3>Tecnologias:</h3>
+							<div class="tech-stack">
+								<span class="tech-badge">HTML</span>
+								<span class="tech-badge">Tailwind CSS</span>
+								<span class="tech-badge">React</span>
+								<span class="tech-badge">PHP</span>
+								<span class="tech-badge">MySQL</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- PROYECTO POS -->
+				<div class="project-card">
+					<div class="project-header">
+						<h2 class="project-title">Sistema POS (Punto de Venta)</h2>
+						<p class="project-subtitle">Sistema completo de gestión de ventas e inventario con reportes en tiempo real y múltiples roles de usuario.</p>
+					</div>
+
+					<!-- IMAGE CAROUSEL -->
+					<div class="carousel-container">
+						<div class="carousel-wrapper">
+							<button class="carousel-btn prev" id="prevBtn">‹</button>
+							<div class="carousel-slide">
+								<img src="Assets/login.png" alt="POS - Login" class="carousel-img active">
+								<img src="Assets/mainpage.png" alt="POS - Página Principal" class="carousel-img">
+								<img src="Assets/productos.png" alt="POS - Productos con Stock Bajo" class="carousel-img">
+								<img src="Assets/reportes.png" alt="POS - Reportes" class="carousel-img">
+								<img src="Assets/historial.png" alt="POS - Historial de Ventas" class="carousel-img">
+								<img src="Assets/detalles.png" alt="POS - Detalles de Venta" class="carousel-img">
+							</div>
+							<button class="carousel-btn next" id="nextBtn">›</button>
+						</div>
+						<div class="carousel-indicators" id="carouselIndicators"></div>
+					</div>
+
+					<div class="project-details">
+						<div class="detail-section">
+							<h3>Características Principales</h3>
+							<ul>
+								<li>Sistema de autenticación con roles (Admin/Empleado)</li>
+								<li>Ventas en tiempo real con código de barras</li>
+								<li>Control de inventario con alertas de stock bajo</li>
+								<li>Reportes con gráficas interactivas (Chart.js)</li>
+								<li>Historial de ventas con filtros múltiples</li>
+								<li>Dashboard administrativo completo</li>
+								<li>Gestión de múltiples métodos de pago</li>
+								<li>Diseño responsive y moderno</li>
+							</ul>
+						</div>
+
+						<div class="detail-section">
+							<h3>Tecnologías:</h3>
+							<div class="tech-stack">
+								<span class="tech-badge">PHP</span>
+								<span class="tech-badge">MySQL</span>
+								<span class="tech-badge">JavaScript</span>
+								<span class="tech-badge">HTML5</span>
+								<span class="tech-badge">CSS3</span>
+								<span class="tech-badge">MVC</span>
+							</div>
+						</div>
+
+						<div class="detail-section full-width">
+							<h3>Módulos del Sistema</h3>
+							<div class="modules-grid">
+								<div class="module-item">
+									<span class="module-icon">🛒</span>
+									<span class="module-name">Punto de Venta</span>
+								</div>
+								<div class="module-item">
+									<span class="module-icon">📊</span>
+									<span class="module-name">Reportes y Análisis</span>
+								</div>
+								<div class="module-item">
+									<span class="module-icon">📦</span>
+									<span class="module-name">Control de Inventario</span>
+								</div>
+								<div class="module-item">
+									<span class="module-icon">👥</span>
+									<span class="module-name">Gestión de Usuarios</span>
+								</div>
+								<div class="module-item">
+									<span class="module-icon">💰</span>
+									<span class="module-name">Historial de Ventas</span>
+								</div>
+								<div class="module-item">
+									<span class="module-icon">⚠️</span>
+									<span class="module-name">Alertas de Stock</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section">
+				<h2>Contacto</h2>
+				<p>¿Interesado en trabajar juntos? Contactame:</p>
+
+				<div class="contact-container">
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">📧</div>
+							<div class="contact-details">
+								<div class="contact-label">Email</div>
+                            <a href="mailto:malmaguer.business@gmail.com" class="contact-value">
+                                malmaguer.business@gmail.com
+                            </a>
+						</div>
+						</div>
+
+						<div class="contact-item">
+                        	<div class="contact-icon">📱</div>
+                        	<div class="contact-details">
+                            	<div class="contact-label">Teléfono</div>
+                            	<a href="tel:+528133987316" class="contact-value">
+                                	(+52) 81 3398 7316
+                            	</a>
+                        	</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
